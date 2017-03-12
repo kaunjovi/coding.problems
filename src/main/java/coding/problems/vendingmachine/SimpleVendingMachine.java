@@ -26,7 +26,16 @@ public class SimpleVendingMachine implements VendingMachine {
 				balance, payment);
 
 		balance = balance.add(payment);
+		logger.debug("The new balance [{}].", balance);
+		return balance;
+	}
 
+	@Override
+	public BigDecimal loadMoney(HardCurrency cash) {
+		logger.debug("Existing balance [{}]. New amount loaded [{}].", balance,
+				cash.getValue());
+		balance = balance.add(cash.getValue());
+		logger.debug("The new balance [{}].", balance);
 		return balance;
 	}
 
