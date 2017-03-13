@@ -1,0 +1,7 @@
+3
+START.
+Weclome. Please choose 1 for English and 2 for Hindi. Choose # to end the call. 
+START.1. 
+You have chosen to communicate in English. Thanks. Choose # to end the call. 
+START.2. 
+You have chose to communicate in Hindi. Thanks. Choose # to end the call.
